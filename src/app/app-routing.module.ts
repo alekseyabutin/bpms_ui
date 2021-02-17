@@ -6,12 +6,15 @@ import { HTMLLayoutComponent }   from './components/html-layout.component';
 import { WebixLayoutComponent }   from './components/webix-layout.component';
 import { TemplateRoutingComponent } from './components/template-routing.component';
 import { DataLoadingComponent } from './components/data-loading.component';
+import { JointJSComponent } from './components/jointjs.component';
+
 
 const routes: Routes = [
   { path: 'webix-layout', component: WebixLayoutComponent },
   { path: 'data-loading', component: DataLoadingComponent },
   { path: 'html-layout', component: HTMLLayoutComponent },
   { path: 'form-grid', component: FormToolbarComponent },
+  { path: 'jointjs-layout', component: JointJSComponent },
   { path: 'template-routing', component: TemplateRoutingComponent, children: [
     { path: 'area1', component: WebixLayoutComponent, outlet:"sub" },
     { path: 'area2',  component: HTMLLayoutComponent, outlet:"sub" }
